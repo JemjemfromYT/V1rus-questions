@@ -1,0 +1,50 @@
+body {
+    font-size: 15pt;
+    text-align: center;
+}
+
+#outputId2 {
+    color: red;
+}
+
+#outputId3 {
+    white-space: pre-wrap;
+}
+
+#outputId5 {
+    white-space: pre-wrap;
+}
+
+#chenyaoPicId {
+    height: 270px;
+    width: 300px;
+   display: none;
+}
+
+#outputChenyaoId {
+    color: cyan;
+}
+
+#buttonId4 {
+    height: 100px;
+    width: 300px;
+    display: none;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
+
+#buttonId4:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+    
+    
+}
