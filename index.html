@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <canvas id="canvasId"></canvas>
   <h3>enter your name</h3>
   <input id="inputId"></input>
   <button id="buttonId">enter</button>
@@ -18,21 +18,24 @@
   <br>
   <p id="outputId2"></p>
   <p id="outputId2" style="color: red"></p>
-  
   <p id="outputId3"></p>
   <button id="buttonId3" style="display: none">answer</button>
   <input id="inputId2" style="display: none;"></input>
-  
   <p id="outputId4"></p>
   <p id="outputId5"></p>
-  <img id="chenyaoPicId"></img>
+  <img id="chenyaoPicId" style="display:none"></img>
   <p id="outputChenyaoId"></p>
   <br>
   <br>
   <audio id="audioHorrorId" src="audioHorror.mp3"></audio>
   <br>
-  <button id="buttonId4">Continue</button>
-  
+  <button id="buttonId4" style="display:none">Continue</button>
+  <div id="blackscreen"></div>
+  <div id="continue" style="display:none">
+    <h4 id="wannaContinue"> are your sure you wanna stil continue?</h4>
+    <button id="buttonId5" style="color: green">Contenyo</button>
+    <video id="jumpscareVideo" src="jumpscare.mp4" style="display:none;"></video>
+  </div>
   <script src="main.js"></script>
 </body>
 </html>
