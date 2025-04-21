@@ -16,7 +16,15 @@ let blackscreenScript = document.getElementById ("blackscreen")
 let continueScript = document.getElementById("continue")
 let buttonIdScript5 = document.getElementById ("buttonId5")
 let jumpscareVideo = document.getElementById ("jumpscareVideo")
+let james = document.getElementById("james")
+let joross =document.getElementById("joross")
 
+setTimeout( ()=>{
+james.textContent="developed by james";
+joross.textContent="suggested by joross"
+james.style.opacity="1";
+joross.style.opacity="1";
+},1000);
 
 buttonIdScript.addEventListener("click", function(){
   
@@ -101,13 +109,17 @@ setTimeout(function(){
         
         blackscreenScript.classList.add("show")
         
-        jumpscareVideo.play();
-        
         setTimeout( ()=>{
+        jumpscareVideo.classList.add("showVideo")
+        jumpscareVideo.play();
+        },1000);
+       /*
+        jumpscareVideo.play();
+         setTimeout( ()=>{
           blackscreenScript.classList.add("show2")
         },1000);
-        
-        
+        */
+      
       
     
   
