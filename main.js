@@ -12,9 +12,10 @@ let chenyaoPicIdScript = document.getElementById("chenyaoPicId")
 let outputChenyaoIdScript = document.getElementById("outputChenyaoId")
 const audio = document.getElementById("audioHorrorId");
 let buttonIdScript4 = document.getElementById("buttonId4")
-    
-   
-
+let blackscreenScript = document.getElementById ("blackscreen") 
+let continueScript = document.getElementById("continue")
+let buttonIdScript5 = document.getElementById ("buttonId5")
+let jumpscareVideo = document.getElementById ("jumpscareVideo")
 
 
 buttonIdScript.addEventListener("click", function(){
@@ -91,6 +92,32 @@ setTimeout(function(){
      
       const audio = document.getElementById("audioHorrorId");
     audio.play();
+    
+    setTimeout( () =>{
+      
+      continueScript.style.display="inline";
+      
+      buttonIdScript5.addEventListener("click", function(){
+        
+        blackscreenScript.classList.add("show")
+        
+        jumpscareVideo.play();
+        
+        setTimeout( ()=>{
+          blackscreenScript.classList.add("show2")
+        },1000);
+        
+        
+      
+    
+  
+        
+        
+        
+
+      });
+      
+    },3000);
     
     
    });
